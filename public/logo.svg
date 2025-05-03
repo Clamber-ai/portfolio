@@ -11,7 +11,6 @@
     </linearGradient>
   </defs>
   
-  <rect x="0" y="0" width="64" height="64" fill="#101014"/>
   <!-- Modern geometric C shape with neon gradient -->
   <path d="M48,20 A16,16 0 1,0 48,44" fill="none" stroke="url(#cGrad)" stroke-width="8" stroke-linecap="round"/>
   <g>

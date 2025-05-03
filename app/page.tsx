@@ -8,8 +8,6 @@ import { cn } from "@/lib/utils"
 import CustomCursor from "@/components/custom-cursor"
 import HeroSection from "@/components/hero-section"
 import AboutSection from "@/components/about-section"
-import ServicesSection from "@/components/services-section"
-import PortfolioSection from "@/components/portfolio-section"
 import YoutubeSection from "@/components/youtube-section"
 import ContactSection from "@/components/contact-section"
 import Footer from "@/components/footer"
@@ -59,8 +57,6 @@ export default function Home() {
   const navItems = [
     { name: "Home", section: "hero" },
     { name: "About", section: "about" },
-    { name: "Services", section: "services" },
-    { name: "Portfolio", section: "portfolio" },
     { name: "YouTube", section: "youtube" },
     { name: "Contact", section: "contact" },
   ]
@@ -146,27 +142,19 @@ export default function Home() {
       </AnimatePresence>
 
       {/* Main Content */}
-      <div ref={(el) => (sectionsRef.current.hero = el)} className="section">
+      <div ref={(el) => { sectionsRef.current.hero = el }} className="section">
         <HeroSection />
       </div>
 
-      <div ref={(el) => (sectionsRef.current.about = el)} className="section">
+      <div ref={(el) => { sectionsRef.current.about = el }} className="section">
         <AboutSection />
       </div>
 
-      <div ref={(el) => (sectionsRef.current.services = el)} className="section">
-        <ServicesSection />
-      </div>
-
-      <div ref={(el) => (sectionsRef.current.portfolio = el)} className="section">
-        <PortfolioSection />
-      </div>
-
-      <div ref={(el) => (sectionsRef.current.youtube = el)} className="section">
+      <div ref={(el) => { sectionsRef.current.youtube = el }} className="section">
         <YoutubeSection />
       </div>
 
-      <div ref={(el) => (sectionsRef.current.contact = el)} className="section">
+      <div ref={(el) => { sectionsRef.current.contact = el }} className="section">
         <ContactSection />
       </div>
 
