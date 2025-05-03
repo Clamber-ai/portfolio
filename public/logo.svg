@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="cGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E6A0"/>
+      <stop offset="50%" stop-color="#00B2FF"/>
+      <stop offset="100%" stop-color="#6C63FF"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00B2FF"/>
+      <stop offset="100%" stop-color="#6C63FF"/>
+    </linearGradient>
+  </defs>
+  
+  <rect x="0" y="0" width="64" height="64" fill="#101014"/>
+  <!-- Modern geometric C shape with neon gradient -->
+  <path d="M48,20 A16,16 0 1,0 48,44" fill="none" stroke="url(#cGrad)" stroke-width="8" stroke-linecap="round"/>
+  <g>
+    <!-- Only the blue circle remains, network and node removed -->
+    <circle cx="52" cy="32" r="4" fill="url(#blueGrad)"/>
+  </g>
+</svg>
