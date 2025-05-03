@@ -72,19 +72,6 @@ export default function HeroSection() {
 
       {/* Hero content */}
       <div className="relative z-10 flex flex-col items-center">
-        {/* Logo */}
-        <motion.div
-          className="parallax-element mb-8"
-          data-speed="0.2"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-        >
-          <div className="relative w-24 h-24 md:w-32 md:h-32">
-            <Image src="/logo.svg" alt="Clamber AI" fill priority />
-          </div>
-        </motion.div>
-
         {/* Heading */}
         <motion.h1
           className="parallax-element text-4xl md:text-6xl lg:text-7xl font-bold text-center mb-6 max-w-4xl"
